@@ -1,0 +1,11 @@
+body {
+  background-color: #f5f6fa;
+}
+
+#root {
+  margin: 0;
+  padding: 0 0 8%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 5%);
+  background-color: #fafafa;
+}

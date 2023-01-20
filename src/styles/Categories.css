@@ -1,0 +1,24 @@
+.categories-container {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-btn {
+  background-color: #0290ff;
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  cursor: pointer;
+  color: white;
+  padding: 9px 23px;
+}
+
+.check-btn:hover {
+  border: none;
+}
+
+.check-btn:active {
+  position: relative;
+  top: 1px;
+}
