@@ -1,0 +1,31 @@
+.add-form {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  border: #c8c8c8 2px dashed;
+  border-radius: 15px;
+}
+
+input {
+  margin-right: 5%;
+  font-size: 1.5rem;
+}
+
+.add-btn {
+  background-color: #0290ff;
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  cursor: pointer;
+  color: white;
+  padding: 9px 23px;
+}
+
+.add-btn:hover {
+  border: none;
+}
+
+.add-btn:active {
+  position: relative;
+  top: 1px;
+}
