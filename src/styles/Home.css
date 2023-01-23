@@ -21,3 +21,17 @@ hr {
   width: 70%;
   margin: 2%;
 }
+
+.not-visible {
+  border: none;
+  background-color: unset;
+  width: 0;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.book-delete-btn {
+  color: #e76d89;
+  font-size: 2rem;
+  cursor: pointer;
+}

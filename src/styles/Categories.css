@@ -1,11 +1,12 @@
 .categories-container {
   height: 50vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .check-btn {
+  margin-top: 10%;
   background-color: #0290ff;
   border-radius: 3px;
   border: 1px solid #0b0e07;
@@ -21,4 +22,11 @@
 .check-btn:active {
   position: relative;
   top: 1px;
+}
+
+.under {
+  font-size: 5rem;
+  color: #0290ff;
+  opacity: 50%;
+  margin-bottom: 0;
 }
