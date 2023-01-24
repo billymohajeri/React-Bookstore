@@ -2,7 +2,7 @@ import '../styles/Form.css';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBookAsync } from '../redux/books/api';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -22,15 +22,19 @@ const Form = () => {
       return;
     }
 
-    const book = {
-      id: uuidv4(),
-      title: newBook.title,
-      author: newBook.author,
-    };
-    dispatch(addBook(book));
+    dispatch(
+      addBookAsync({
+        item_id: uuidv4(),
+        title: newBook.title,
+        author: newBook.author,
+        category: '',
+      }),
+    );
+    // dispatch(addBookAsync(book));
     setNewBook({
       title: '',
       author: '',
+      category: '',
     });
   };
 

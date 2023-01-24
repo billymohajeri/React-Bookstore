@@ -1,25 +1,40 @@
 const ADD = 'books/ADD_BOOK';
 const REMOVE = 'books/REMOVE_BOOK';
+const LOAD = 'books/LOAD_BOOKS';
 
-const INITIAL_STATE = [
-  { id: 1, title: 'Blindness', author: 'José Saramago' },
-  { id: 2, title: 'The Stranger', author: 'Albert Camus' },
-  { id: 3, title: 'The Metamorphosis', author: 'Franz Kafka' },
-];
+const INITIAL_STATE = [];
 
 const bookReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case LOAD: {
+      const bookArr = [];
+      Object.entries(action.books).forEach(([key, value]) => {
+        bookArr.push({
+          item_id: key,
+          title: value[0].title,
+          category: '',
+          author: value[0].author,
+        });
+      });
+      return bookArr;
+    }
+
     case ADD:
       return [...state, action.book];
 
     case REMOVE: {
-      const filteredBooks = state.filter((book) => book.id !== action.bookId);
+      const filteredBooks = state.filter((book) => book.item_id !== action.bookId);
       return filteredBooks;
     }
     default:
       return state;
   }
 };
+
+export const loadBooks = (books) => ({
+  type: LOAD,
+  books,
+});
 
 export const addBook = (book) => ({
   type: ADD,
