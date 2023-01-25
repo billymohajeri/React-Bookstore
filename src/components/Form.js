@@ -39,27 +39,32 @@ const Form = () => {
   };
 
   return (
-    <form className="add-form">
-      <input
-        type="text"
-        placeholder="Title"
-        name="title"
-        required
-        value={newBook.title}
-        onChange={handleInput}
-      />
-      <input
-        type="text"
-        placeholder="Author"
-        name="author"
-        required
-        value={newBook.author}
-        onChange={handleInput}
-      />
-      <button type="submit" className="add-btn" onClick={handleClick}>
-        Add
-      </button>
-    </form>
+    <section className="form-container">
+      <h2 className="form-title">ADD NEW BOOK</h2>
+      <form className="add-form">
+        <input
+          type="text"
+          placeholder="Book title"
+          name="title"
+          className="title-input"
+          required
+          value={newBook.title}
+          onChange={handleInput}
+        />
+        <input
+          type="text"
+          placeholder="Author"
+          name="author"
+          className="author-input"
+          required
+          value={newBook.author}
+          onChange={handleInput}
+        />
+        <button type="submit" className="add-btn" onClick={handleClick}>
+          Add Book
+        </button>
+      </form>
+    </section>
   );
 };
 export default Form;

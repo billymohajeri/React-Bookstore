@@ -12,7 +12,7 @@ const bookReducer = (state = INITIAL_STATE, action) => {
         bookArr.push({
           item_id: key,
           title: value[0].title,
-          category: '',
+          category: value[0].category,
           author: value[0].author,
         });
       });
