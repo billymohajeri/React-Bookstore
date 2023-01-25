@@ -1,25 +1,61 @@
 .add-form {
-  margin: 50px;
   display: flex;
-  justify-content: center;
-  padding: 3%;
-  border: #c8c8c8 2px dashed;
-  border-radius: 15px;
+  width: 100%;
+  gap: 32px;
+}
+
+.form-container {
+  text-align: left;
+  width: 98%;
+}
+
+.form-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #888;
+  letter-spacing: -0.18px;
+  font-size: 1.25rem;
 }
 
 input {
-  margin-right: 5%;
-  font-size: 1.5rem;
+  padding: 12px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: #121212;
+}
+
+input::placeholder {
+  color: #c4c4c4;
+}
+
+.title-input {
   width: 50%;
 }
 
+.author-input {
+  width: 30%;
+}
+
+input:focus {
+  outline: none;
+  border: solid 1px #0290ff;
+}
+
 .add-btn {
-  background-color: #0290ff;
-  border-radius: 3px;
-  border: 1px solid #0b0e07;
   cursor: pointer;
+  width: 20%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
   color: white;
-  padding: 9px 23px;
+  font-size: 0.813rem;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
 }
 
 .add-btn:hover {

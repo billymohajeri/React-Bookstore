@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/Navigation.css';
-import { BsPersonBoundingBox } from 'react-icons/bs';
 
 const Navigation = () => (
   <nav className="navmenu-desktop">
@@ -12,21 +11,23 @@ const Navigation = () => (
         <NavLink
           to="/"
           end
-          className={({ isActive }) => (isActive ? 'activeLink' : undefined)}
+          className={({ isActive }) => (isActive ? 'activeLink' : 'nonActiveLink')}
         >
-          Home
+          BOOKS
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink
           to="categories"
-          className={({ isActive }) => (isActive ? 'activeLink' : undefined)}
+          className={({ isActive }) => (isActive ? 'activeLink' : 'nonActiveLink')}
         >
-          Categories
+          CATEGORIES
         </NavLink>
       </li>
     </ul>
-    <BsPersonBoundingBox className="user" />
+    <button className="icon-button" type="button">
+      <i className="material-icons user">person</i>
+    </button>
   </nav>
 );
 

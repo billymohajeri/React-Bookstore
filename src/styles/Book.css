@@ -1,8 +1,30 @@
+.book-category {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  opacity: 0.5;
+  font-weight: bold;
+  color: #121212;
+  margin-top: -2px;
+}
+
 .book-title {
-  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  color: #121212;
+  margin-top: -12px;
 }
 
 .book-author {
-  font-size: 1.5rem;
-  margin-left: 4%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+  margin-top: -22px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
 }

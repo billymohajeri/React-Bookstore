@@ -19,17 +19,22 @@
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  gap: 40px;
 }
 
 .nav-item {
-  margin: 1rem;
-  font-size: 1rem;
-  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  color: #121212;
+  letter-spacing: 1.9px;
 }
 
 .activeLink {
-  color: #0290ff;
   opacity: 1;
+}
+
+.nonActiveLink {
+  opacity: 0.5;
 }
 
 a {
@@ -37,9 +42,18 @@ a {
   text-decoration: inherit;
 }
 
+.icon-button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+
 .user {
   color: #0290ff;
-  margin-left: auto;
-  font-size: 3rem;
+  background-color: inherit;
+  font-size: 24px;
   cursor: pointer;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  padding: 10px;
 }
